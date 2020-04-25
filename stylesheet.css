@@ -1,0 +1,298 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+h1{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.slide {
+  width: 100vw;
+  height: 90.5vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 900vw;
+  height: 90.5vh;
+  transform: rotate(90deg) translateY(-90.5vh);
+  transform-origin: top left;
+}
+
+.outer-wrapper {
+  width: 90.5vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-90.5vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  padding: 0;
+  background: #000;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.nav-item {
+  padding: 6px;
+  margin: 10px;
+  text-align: center;
+  border: 2px gray;
+  border-style: ridge;
+  border-radius: 10px;
+}
+
+.nav-link {
+  padding: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.one {
+  padding-left: 0;
+  padding-right: 0;
+  background-image: url("slide1.jpg");
+  background-size: 100%, 100%;
+  background-size: cover;
+  background-position: center;
+
+  z-index: -100;
+}
+
+.intro {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+
+  margin: 0;
+}
+
+.intro h1 {
+  color: white;
+  padding-top: 8rem;
+  text-align: left;
+  font-size: 60px;
+  padding-left: 2rem;
+  font-weight: lighter;
+}
+
+.intro button {
+  text-align: left;
+  display: inline-block;
+  margin-left: 0;
+}
+
+.intro p {
+  margin-top: 2rem;
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.btn {
+  margin: 0;
+}
+
+.collapse {
+  width: 40%;
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.collapsing {
+  width: 40%;
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.two {
+
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url("green-chameleon-on-black-surface-3779926.jpg");
+    background-size: 100%, 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.three {
+  padding-left: 0;
+  padding-right: 0;
+  background-image: url("slide3.jpg");
+  background-size: 100%, 100%;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.four {
+  padding-left: 0;
+  padding-right: 0;
+  background-image: url("slide4.jpg");
+  background-size: 100%, 100%;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.five {
+  padding-left: 0;
+  padding-right: 0;
+  background-image: url("slide5.jpg");
+  background-size: 100%, 100%;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.six {
+  padding-left: 0;
+  padding-right: 0;
+  background-image: url("slide6.jpg");
+  background-size: 100%, 100%;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.seven {
+  padding-left: 0;
+  padding-right: 0;
+  background-image: url("slide7.jpg");
+  background-size: 100%, 100%;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.eight {
+  padding-left: 0;
+  padding-right: 0;
+  background-image: url("slide8.jpg");
+  background-size: 100%, 100%;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.nine {
+  padding-left: 0;
+  padding-right: 0;
+  background-image: url("slide9redux.jpg");
+  background-size: 100%, 100%;
+  background-size: cover;
+  background-position: center;
+  color: black;
+
+
+}
+
+.nine-body{
+  color: black;
+}
+
+.nine button{
+  margin: 1rem;
+  border: 2px solid white;
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
+
+  .slide {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 900vw;
+    height: 100vh;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+  }
+
+  .outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar-toggler-icon{
+    width: 40px;
+    height: inherit;
+    padding: auto;
+    color: white;
+
+  }
+
+  .one{
+    background-image: url("slide1redux.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .two{
+    background-image: url("slide2redux.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .three{
+    background-image: url("slide3redux.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .five{
+    background-image: url("slide5redux.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .six{
+    background-image: url("slide6redux.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .seven{
+    background-image: url("slide7redux.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .eight{
+    background-image: url("slide8redux.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
